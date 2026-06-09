@@ -1,0 +1,23 @@
+name: Bug
+description: Report a routing or rendering bug
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: variant
+    attributes:
+      label: Variant and accent
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

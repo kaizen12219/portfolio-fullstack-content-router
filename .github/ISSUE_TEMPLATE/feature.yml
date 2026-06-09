@@ -1,0 +1,21 @@
+name: Feature
+description: Plan a router or UI feature
+title: "feat: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: portfolio
+    attributes:
+      label: Portfolio impact
