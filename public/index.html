@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Content Router</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #10141f;
+        color: #f5f7fb;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px;
+      }
+      form {
+        display: flex;
+        gap: 12px;
+        margin: 24px 0;
+        flex-wrap: wrap;
+      }
+      select, button {
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid #485064;
+        background: #171d2b;
+        color: #f5f7fb;
+      }
+      button {
+        cursor: pointer;
+        background: #2f80ed;
+        border-color: #2f80ed;
+      }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      article {
+        border: 1px solid #2d3446;
+        border-radius: 8px;
+        padding: 18px;
+        background: #171d2b;
+      }
+      .meta {
+        color: #a8b3cf;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Portfolio Content Router</h1>
+      <p>Switch a role variant and stack accent to see which projects should lead the portfolio.</p>
+      <form id="controls">
+        <select name="variant" aria-label="Variant">
+          <option value="fullstack-product">Full-stack product</option>
+          <option value="frontend-web">Frontend web</option>
+          <option value="backend-platform">Backend platform</option>
+          <option value="ai-data">AI data</option>
+        </select>
+        <select name="accent" aria-label="Accent">
+          <option value="node">Node</option>
+          <option value="go">Go</option>
+          <option value="python">Python</option>
+          <option value="dotnet">.NET</option>
+        </select>
+        <button type="submit">Route</button>
+      </form>
+      <section id="results" class="grid" aria-live="polite"></section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
