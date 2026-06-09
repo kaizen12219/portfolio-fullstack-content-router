@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-fullstack-content-router",
+  "version": "0.1.0",
+  "description": "Variant and stack accent content router for portfolio series.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
