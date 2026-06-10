@@ -34,5 +34,47 @@ export const projects = [
     accents: ["python"],
     skills: ["Algorithms", "Pathfinding", "Data Storytelling"],
     proofDepth: 4
+  },
+  {
+    id: "time-trial-cards",
+    title: "Time Trial Cards",
+    category: "mobile-quality",
+    variants: ["mobile", "fullstack-product"],
+    accents: ["mobile"],
+    skills: ["QA", "Touch Interaction", "Release Readiness"],
+    proofDepth: 4
+  }
+];
+
+export const seriesProfiles = [
+  {
+    variant: "backend-platform",
+    label: "Backend and Platform",
+    resumeCount: 151,
+    stackSignals: ["Go", "Python", "Java", "C#", "SQL", "AWS", "Docker", "Kubernetes", "Terraform"]
+  },
+  {
+    variant: "ai-data",
+    label: "AI and Data",
+    resumeCount: 38,
+    stackSignals: ["Python", "SQL", "Airflow", "Databricks", "Snowflake", "LLM", "RAG"]
+  },
+  {
+    variant: "fullstack-product",
+    label: "Full-Stack Product",
+    resumeCount: 30,
+    stackSignals: ["TypeScript", "React", "Node.js", "Next.js", "SQL", "Python"]
+  },
+  {
+    variant: "frontend-web",
+    label: "Frontend Web",
+    resumeCount: 5,
+    stackSignals: ["TypeScript", "JavaScript", "React", "Vue.js", "HTML", "CSS", "PHP"]
+  },
+  {
+    variant: "mobile",
+    label: "Mobile Quality",
+    resumeCount: 19,
+    stackSignals: ["Swift", "Kotlin", "Android", "iOS", "React Native", "Unity", "CI/CD"]
   }
 ];

@@ -2,7 +2,7 @@ import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import { extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projects } from "./content.js";
+import { projects, seriesProfiles } from "./content.js";
 import { selectProjects } from "./router.js";
 
 const port = Number(process.env.PORT ?? 4177);
@@ -18,6 +18,14 @@ createServer(async (request, response) => {
       variant,
       accent,
       projects: selectProjects(projects, { variant, accent })
+    });
+    return;
+  }
+
+  if (url.pathname === "/api/series") {
+    sendJson(response, {
+      totalResumeBriefs: seriesProfiles.reduce((total, item) => total + item.resumeCount, 0),
+      series: seriesProfiles
     });
     return;
   }
